@@ -1,0 +1,20 @@
+{
+  "name": "h5-init-css",
+  "version": "0.0.1",
+  "description": "H5 css初始化",
+  "main": "init.css",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caoxize/init.css.git"
+  },
+  "keywords": [
+    "css",
+    "init"
+  ],
+  "author": "caowei",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/caoxize/init.css/issues"
+  },
+  "homepage": "https://github.com/caoxize/init.css#readme"
+}
