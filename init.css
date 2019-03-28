@@ -18,7 +18,20 @@ time, mark, audio, video {
     font: inherit;
     vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  -webkit-font-smoothing: antialiased;
+}
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, main {
     display: block;
@@ -38,14 +51,6 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-html {
-  line-height: 1.15;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-h1 {
-  font-size: 2em;
-}
 hr {
   box-sizing: content-box;
   height: 0;
@@ -58,6 +63,13 @@ pre {
 a {
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
+}
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited {
+  text-decoration: none;
 }
 abbr[title] {
   border-bottom: none;
@@ -151,6 +163,11 @@ button:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
   outline: 1px dotted ButtonText;
+}
+button {
+  outline: 0;
+  border: 0;
+  appearance: none;
 }
 legend {
   box-sizing: border-box;
